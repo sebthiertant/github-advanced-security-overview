@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GitHub Advanced Security: Secret Protection and Code Security at a glance</title>
+  <meta name="description" content="GitHub Advanced Security is two standalone products, GitHub Secret Protection and GitHub Code Security. Every feature on one page, as tiles, by stage of the developer path. Public sources only.">
+  <meta property="og:title" content="GitHub Advanced Security at a glance">
+  <meta property="og:description" content="Block the leak, fix the flaw, ship safely: Secret Protection and Code Security, feature by feature.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mona+Sans:wdth,wght@75..125,300..800&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&display=swap">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="page">
+
+  <header class="masthead">
+    <a class="brand" href="#top">
+      <svg viewBox="0 0 16 16" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"/></svg>
+      <span class="brand-name">GitHub Advanced Security</span>
+      <span class="brand-title">Product map</span>
+    </a>
+    <p class="dateline">
+      <span>November 2026</span>
+      <span>2-minute read</span>
+      <a href="#sources">Sources</a>
+      <button type="button" class="linklike" data-print>Save as PDF</button>
+    </p>
+  </header>
+
+  <main id="top">
+
+    <section class="hero" aria-labelledby="headline">
+      <div class="hero-copy">
+        <p class="kicker">Secret Protection <span class="nowrap">and Code Security</span></p>
+        <h1 id="headline">Block the leak, fix the flaw, <span class="marker">ship safely.</span></h1>
+        <p class="dek">Since April 2025, GitHub Advanced Security is two standalone products.<sup><a href="#s1">1</a></sup> The basics, like Dependabot alerts and the dependency graph, are in every plan.<sup><a href="#s2">2</a></sup></p>
+
+        <ul class="products">
+          <li class="sp"><i aria-hidden="true"></i><b>Secret Protection</b><span>Detect and prevent secret leaks.<sup><a href="#s3">3</a></sup></span></li>
+          <li class="cs"><i aria-hidden="true"></i><b>Code Security</b><span>Find and fix vulnerabilities.<sup><a href="#s3">3</a></sup></span></li>
+        </ul>
+      </div>
+
+      <figure class="path">
+        <p class="fig-title"><span class="fig-no">Fig. 1</span>One developer path, two products<span class="fig-sep">, </span><span class="fig-n">headline features</span></p>
+        <ol class="stages" aria-hidden="true">
+          <li>While coding</li>
+          <li>Before merge</li>
+          <li>After merge</li>
+          <li>At scale</li>
+        </ol>
+        <div class="lane sp">
+          <p class="lane-name">Secret Protection</p>
+          <ul class="flow">
+            <li><small>While coding</small>Agent scanning</li>
+            <li><small>Before merge</small>Push protection</li>
+            <li><small>After merge</small>Secret scanning</li>
+            <li><small>At scale</small>Public monitoring</li>
+          </ul>
+        </div>
+        <div class="lane cs">
+          <p class="lane-name">Code Security</p>
+          <ul class="flow">
+            <li><small>While coding</small>CodeQL CLI</li>
+            <li><small>Before merge</small>CodeQL + AI Scan</li>
+            <li><small>After merge</small>Agentic autofix</li>
+            <li><small>At scale</small>Security campaigns</li>
+          </ul>
+        </div>
+        <figcaption>
+          <span class="keyline"><span class="tag">GA</span> generally available <span class="tag pv">Preview</span> public preview <span>No label: long established.</span></span>
+          Every feature is in the boards below.
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="block sp" id="secret" aria-labelledby="h-sp">
+      <header class="block-head">
+        <span class="num" aria-hidden="true">01</span>
+        <h2 id="h-sp">Secret Protection</h2>
+        <p>Detect and prevent secret leaks, from the first keystroke to the whole enterprise.<sup><a href="#s3">3</a></sup></p>
+      </header>
+      <div class="block-body">
+        <div class="board">
+          <div class="col">
+            <h3><i>1</i>While coding</h3>
+            <article class="tile">
+              <p class="tag pv">Preview · 17 Nov</p>
+              <h4>Scan on demand</h4>
+              <p>Copilot's security review checks your changes for secrets, in the CLI, the Copilot app and code review.<sup><a href="#s6">6</a></sup></p>
+            </article>
+            <article class="tile">
+              <p class="tag">GA · 5 May</p>
+              <h4>In the MCP Server</h4>
+              <p>Agents and IDEs scan your current changes before you commit.<sup><a href="#s7">7</a></sup></p>
+            </article>
+          </div>
+          <div class="col">
+            <h3><i>2</i>Before merge</h3>
+            <article class="tile">
+              <h4>Push protection</h4>
+              <p>Blocks a push that contains a secret, before it reaches the repository.<sup><a href="#s4">4</a></sup></p>
+            </article>
+            <article class="tile">
+              <p class="tag pv">Preview · 28 Oct</p>
+              <h4>Beyond patterns</h4>
+              <p>A classifier built with Microsoft Applied Sciences blocks secrets that have no recognizable format.<sup><a href="#s8">8</a></sup></p>
+            </article>
+            <article class="tile">
+              <h4>Delegated bypass</h4>
+              <p>Bypassing a block needs approval from reviewers you designate.<sup><a href="#s4">4</a></sup></p>
+            </article>
+            <article class="tile">
+              <p class="tag pv">Preview · 9 Sep</p>
+              <h4>Block PRs with secrets</h4>
+              <p>A ruleset rule keeps pull requests with open secret alerts from merging.<sup><a href="#s9">9</a></sup></p>
+            </article>
+          </div>
+          <div class="col">
+            <h3><i>3</i>After merge</h3>
+            <article class="tile">
+              <h4>Secret scanning alerts</h4>
+              <p>Provider, generic and custom patterns, with validity checks to see if a secret is still active.<sup><a href="#s4">4</a></sup></p>
+            </article>
+            <article class="tile">
+              <p class="tag">New model · 7 Oct</p>
+              <h4>AI-detected secrets</h4>
+              <p>A purpose-built model finds generic passwords.<sup><a href="#s10">10</a></sup></p>
+            </article>
+            <article class="tile">
+              <p class="tag pv">Preview · 9 Nov</p>
+              <h4>Actions workflow logs</h4>
+              <p>Scans logs when a run completes, alongside issues, wikis, discussions and pull requests.<sup><a href="#s11">11</a></sup></p>
+            </article>
+          </div>
+          <div class="col">
+            <h3><i>4</i>At scale</h3>
+            <article class="tile">
+              <p class="tag">GA · 28 Oct</p>
+              <h4>Public monitoring</h4>
+              <p>Alerts you when your enterprise's secrets leak anywhere on public github.com. Never scans private repositories.<sup><a href="#s12">12</a></sup></p>
+            </article>
+            <article class="tile">
+              <h4>Custom patterns</h4>
+              <p>Define your own secret formats for your organization.<sup><a href="#s4">4</a></sup></p>
+            </article>
+          </div>
+        </div>
+        <p class="footnote">Public monitoring is for enterprises on GitHub Enterprise Cloud.<sup><a href="#s12">12</a></sup> Scan on demand and push protection beyond patterns are off by default.<sup><a href="#s6">6</a> <a href="#s8">8</a></sup></p>
+      </div>
+    </section>
+
+    <section class="block cs" id="code" aria-labelledby="h-cs">
+      <header class="block-head">
+        <span class="num" aria-hidden="true">02</span>
+        <h2 id="h-cs">Code Security</h2>
+        <p>CodeQL and AI Scan find the vulnerabilities; Copilot fixes them.<sup><a href="#s5">5</a></sup></p>
+      </header>
+      <div class="block-body">
+        <div class="board">
+          <div class="col">
+            <h3><i>1</i>While coding</h3>
+            <article class="tile">
+              <h4>CodeQL CLI</h4>
+              <p>Run CodeQL on your machine, or generate results to upload to GitHub.<sup><a href="#s3">3</a></sup></p>
+            </article>
+          </div>
+          <div class="col">
+            <h3><i>2</i>Before merge</h3>
+            <article class="tile">
+              <h4>Code scanning</h4>
+              <p>CodeQL, or a third-party tool, finds vulnerabilities and coding errors.<sup><a href="#s3">3</a></sup></p>
+            </article>
+            <article class="tile">
+              <p class="tag">GA · 15 Oct</p>
+              <h4>AI Scan for PRs</h4>
+              <p>Covers what CodeQL doesn't: PHP, Shell, Terraform, Dockerfiles and more. Advisory; never blocks a merge.<sup><a href="#s13">13</a></sup></p>
+            </article>
+            <article class="tile">
+              <p class="tag pv">Preview · 28 Oct</p>
+              <h4>Code scanning for AI apps</h4>
+              <p>Flags indirect prompt injection, sensitive data disclosure and excessive agency.<sup><a href="#s14">14</a></sup></p>
+            </article>
+            <article class="tile">
+              <h4>Dependency review</h4>
+              <p>Shows the impact of dependency changes, and vulnerable versions, before you merge.<sup><a href="#s3">3</a></sup></p>
+            </article>
+          </div>
+          <div class="col">
+            <h3><i>3</i>After merge</h3>
+            <article class="tile">
+              <h4>Copilot Autofix</h4>
+              <p>Generates fixes for code scanning alerts.<sup><a href="#s3">3</a></sup></p>
+            </article>
+            <article class="tile">
+              <p class="tag">GA · 15 Oct</p>
+              <h4>Agentic autofix</h4>
+              <p>Assign an alert to Copilot: it fixes, re-runs CodeQL and opens a draft PR. Up to 25 alerts per PR.<sup><a href="#s15">15</a></sup></p>
+            </article>
+            <article class="tile">
+              <p class="tag pv">Preview · 28 Oct</p>
+              <h4>AI Scan for repositories</h4>
+              <p>An agentic scan of the whole default branch that skips what CodeQL already reports.<sup><a href="#s16">16</a></sup></p>
+            </article>
+            <article class="tile">
+              <p class="tag pv">Preview · 28 Oct</p>
+              <h4>Reachability analysis</h4>
+              <p>Gives Dependabot alerts a verdict: Reachable, Potentially reachable or Unreachable. JavaScript and TypeScript.<sup><a href="#s17">17</a></sup></p>
+            </article>
+          </div>
+          <div class="col">
+            <h3><i>4</i>At scale</h3>
+            <article class="tile">
+              <h4>Security campaigns</h4>
+              <p>Plan, track and fix vulnerabilities across repositories and teams.<sup><a href="#s5">5</a></sup></p>
+            </article>
+            <article class="tile">
+              <p class="tag">GA · 16 Oct</p>
+              <h4>License compliance</h4>
+              <p>One enterprise open source license policy, enforced through rulesets.<sup><a href="#s18">18</a></sup></p>
+            </article>
+            <article class="tile">
+              <h4>Auto-triage rules</h4>
+              <p>Rules that ignore, snooze or fix Dependabot alerts for you.<sup><a href="#s3">3</a></sup></p>
+            </article>
+          </div>
+        </div>
+        <p class="footnote">Agentic autofix, reachability analysis and license compliance run on GitHub Enterprise Cloud; code scanning for AI apps is on github.com only.<sup><a href="#s14">14</a> <a href="#s15">15</a> <a href="#s17">17</a> <a href="#s18">18</a></sup></p>
+      </div>
+    </section>
+
+    <section class="block" id="around" aria-labelledby="h-around">
+      <header class="block-head">
+        <span class="num" aria-hidden="true">03</span>
+        <h2 id="h-around">Around both products</h2>
+        <p>What every plan already has, what the two products share, and how they cover AI agents.</p>
+      </header>
+      <div class="block-body">
+        <div class="board three">
+          <div class="col all">
+            <h3>In every plan</h3>
+            <article class="tile">
+              <h4>Dependency graph</h4>
+              <p>With SBOM export and the GitHub Advisory Database.<sup><a href="#s2">2</a></sup></p>
+            </article>
+            <article class="tile">
+              <h4>Dependabot</h4>
+              <p>Alerts, security updates and version updates.<sup><a href="#s2">2</a></sup></p>
+            </article>
+            <article class="tile">
+              <h4>Policy, advisories, rulesets</h4>
+              <p>Security policy, security advisories and repository rulesets.<sup><a href="#s2">2</a></sup></p>
+            </article>
+          </div>
+          <div class="col">
+            <h3>Across both products</h3>
+            <article class="tile both">
+              <h4>Security overview</h4>
+              <p>See the distribution of risk across your organization.<sup><a href="#s3">3</a></sup></p>
+            </article>
+            <article class="tile both">
+              <h4>Risk assessments</h4>
+              <p>Show your secret and code exposure, and which repositories are unprotected. Run automatically on GitHub Team since 18 Nov.<sup><a href="#s19">19</a></sup></p>
+            </article>
+          </div>
+          <div class="col">
+            <h3>For AI agents</h3>
+            <article class="tile sp">
+              <p class="tag pv">Preview · 17 Nov</p>
+              <h4>Secret scanning for agents</h4>
+              <p>On demand from Copilot, and in the MCP Server. See Secret Protection.<sup><a href="#s6">6</a> <a href="#s7">7</a></sup></p>
+            </article>
+            <article class="tile cs">
+              <p class="tag pv">Preview · 28 Oct</p>
+              <h4>Scanning AI apps</h4>
+              <p>Prompt injection and excessive agency checks. See Code Security.<sup><a href="#s14">14</a></sup></p>
+            </article>
+            <article class="tile all">
+              <p class="tag">GA · 9 Jun</p>
+              <h4>Security validation</h4>
+              <p>Code from Copilot cloud agent, Claude or OpenAI Codex is checked with CodeQL, the Advisory Database and secret scanning.<sup><a href="#s20">20</a></sup></p>
+            </article>
+          </div>
+        </div>
+        <p class="footnote">Some features also run by default on public repositories: secret scanning alerts, push protection, code scanning and dependency review.<sup><a href="#s2">2</a> <a href="#s3">3</a></sup></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="colophon" id="sources">
+    <div>
+      <h3>Where to start</h3>
+      <ol class="steps">
+        <li>Run a security risk assessment on an organization, for secrets and for code.<sup><a href="#s4">4</a> <a href="#s5">5</a></sup></li>
+        <li>Turn on Secret Protection, Code Security or both, on the repositories that matter.<sup><a href="#s3">3</a></sup></li>
+        <li>Follow the results in security overview.<sup><a href="#s3">3</a></sup></li>
+      </ol>
+    </div>
+    <div>
+      <h3>Sources</h3>
+      <ol class="sources">
+        <li id="s1"><a href="https://github.blog/changelog/2025-03-04-introducing-github-secret-protection-and-github-code-security/">GitHub Changelog, Secret Protection and Code Security</a>, 4 Mar 2025</li>
+        <li id="s2"><a href="https://docs.github.com/en/code-security/getting-started/github-security-features">GitHub Docs, GitHub security features</a></li>
+        <li id="s3"><a href="https://docs.github.com/en/get-started/learning-about-github/about-github-advanced-security">GitHub Docs, About GitHub Advanced Security</a></li>
+        <li id="s4"><a href="https://github.com/security/advanced-security/secret-protection">GitHub, Secret Protection</a> product page</li>
+        <li id="s5"><a href="https://github.com/security/advanced-security/code-security">GitHub, Code Security</a> product page</li>
+        <li id="s6"><a href="https://github.blog/changelog/2026-11-17-secret-scanning-on-demand-for-developers-and-agents">Changelog, secret scanning on demand</a>, 17 Nov 2026</li>
+        <li id="s7"><a href="https://github.blog/changelog/2026-05-05-secret-scanning-with-github-mcp-server-is-now-generally-available">Changelog, secret scanning in the MCP Server</a>, 5 May 2026</li>
+        <li id="s8"><a href="https://github.blog/changelog/2026-10-28-push-protection-beyond-predefined-secret-patterns">Changelog, push protection beyond patterns</a>, 28 Oct 2026</li>
+        <li id="s9"><a href="https://github.blog/changelog/2026-09-09-block-pull-requests-with-exposed-secrets-from-merging">Changelog, block PRs with exposed secrets</a>, 9 Sep 2026</li>
+        <li id="s10"><a href="https://github.blog/changelog/2026-10-07-purpose-built-model-for-leaked-secret-detection">Changelog, purpose-built secret detection model</a>, 7 Oct 2026</li>
+        <li id="s11"><a href="https://github.blog/changelog/2026-11-09-secret-scanning-detects-secrets-in-github-actions-workflow-logs">Changelog, secret scanning in Actions logs</a>, 9 Nov 2026</li>
+        <li id="s12"><a href="https://github.blog/changelog/2026-10-28-public-monitoring-for-enterprises-generally-available">Changelog, public monitoring</a>, 28 Oct 2026</li>
+        <li id="s13"><a href="https://github.blog/changelog/2026-10-15-ai-scan-for-pull-requests-generally-available">Changelog, AI Scan for pull requests</a>, 15 Oct 2026</li>
+        <li id="s14"><a href="https://github.blog/changelog/2026-10-28-code-scanning-for-ai-applications-in-public-preview">Changelog, code scanning for AI applications</a>, 28 Oct 2026</li>
+        <li id="s15"><a href="https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability">Changelog, agentic autofix</a>, 15 Oct 2026</li>
+        <li id="s16"><a href="https://github.blog/changelog/2026-10-28-ai-scan-for-repositories-in-public-preview">Changelog, AI Scan for repositories</a>, 28 Oct 2026</li>
+        <li id="s17"><a href="https://github.blog/changelog/2026-10-28-prioritize-dependabot-alerts-with-reachability-analysis">Changelog, Dependabot reachability analysis</a>, 28 Oct 2026</li>
+        <li id="s18"><a href="https://github.blog/changelog/2026-10-16-open-source-license-compliance-generally-available">Changelog, open source license compliance</a>, 16 Oct 2026</li>
+        <li id="s19"><a href="https://github.blog/changelog/2026-11-18-security-risk-assessments-run-automatically-on-github-team">Changelog, risk assessments on GitHub Team</a>, 18 Nov 2026</li>
+        <li id="s20"><a href="https://github.blog/changelog/2026-06-09-security-validation-for-third-party-coding-agents">Changelog, security validation for coding agents</a>, 9 Jun 2026</li>
+      </ol>
+    </div>
+    <div>
+      <h3>Read this fairly</h3>
+      <ul class="caveats">
+        <li>Labels are as of 19 Nov 2026. Preview features can change before they are generally available.</li>
+        <li>Availability varies by plan and deployment. Check the docs for GitHub Enterprise Server.</li>
+        <li>On private and internal repositories, these features need the matching product.<sup><a href="#s3">3</a></sup></li>
+        <li>Headline features only, not every capability.</li>
+      </ul>
+    </div>
+    <p class="signoff"><span>Prepared by your GitHub account team from public sources.</span><span>Changelog checked 19 Nov 2026.</span></p>
+  </footer>
+
+</div>
+<script src="assets/app.js" defer></script>
+</body>
+</html>
