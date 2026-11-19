@@ -18,7 +18,7 @@ Each tile carries a **GA** or **Preview** label with a date when the feature is 
 
 ## Sources and caveats
 
-Every claim is numbered and linked to a public source at the bottom of the page: GitHub Docs, the GitHub product pages and the GitHub Changelog. There is no pricing or billing content on purpose.
+Every claim is numbered and linked to a public source at the bottom of the page: GitHub Docs, the GitHub product pages and the GitHub Changelog.
 
 - Status labels are as of 19 Nov 2026. Previews can change before general availability, and some are off by default.
 - Availability varies by plan and deployment (GitHub Enterprise Cloud, github.com only, GitHub Enterprise Server). Check the linked docs before quoting.
