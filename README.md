@@ -26,4 +26,4 @@ Every claim is numbered and linked to a public source at the bottom of the page:
 
 ## Built with
 
-Plain HTML, CSS and JavaScript, no libraries and no build step. Fonts: Mona Sans and Newsreader, from Google Fonts.
+Plain HTML, CSS and JavaScript, no build step. Fonts: Outfit and JetBrains Mono from Google Fonts. Icons: GitHub Octicons, inlined under the MIT license.
